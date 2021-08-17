@@ -17,6 +17,6 @@ Content of tile flags
 - 0x4000 - FLAGS_GREEN
 - 0x8000 - FLAGS_BLUE
 
-if **FLAGS_TILEEXTRA** bit is on there'll be 1 additional byte which is extra tile type this data might be followed by **extra tile data**
+if **FLAGS_TILEEXTRA** bit is on there'll be 1 additional byte which is **extra tile type** this data might be followed by **extra tile data**
 
 you can read more information about [extra tile data](extra_tile_data/README.md).
