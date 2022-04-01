@@ -1,9 +1,11 @@
 ### Tile data description
 
-- ushort - foreground item id
-- ushort - background item id
-- ushort - parent block index used for lock, fish tank port etc...
-- ushort - tile flags
+- unsigned short -> foreground id
+- unsigned short -> background id
+- unsigned short -> parent block index used for lock, fish tank port and etc...
+- unsigned short -> tile flags
+if **TILEFLAGS_LOCKED** bti is on there'll be 1 additional unsigned short
+   - unsigned short -> parent block index
 
 Content of tile flags
  - (0x1)    TILEFLAG_TILEEXTRA = 1 << 0
@@ -19,6 +21,6 @@ Content of tile flags
  - (0x4000) TILEFLAG_BLUE = 1 << 14
  - (0x8000) TILEFLAG_GREEN = 1 << 15
 
-if **FLAGS_TILEEXTRA** bit is on there'll be 1 additional byte which is **extra tile type** this data might be followed by **extra tile data**
+if **TILEFLAG_TILEEXTRA** bit is on there'll be 1 additional byte which is **extra tile type** this data might be followed by **extra tile data**
 
 you can read more information about [extra tile data](extra_tile_data/README.md).
