@@ -4,7 +4,7 @@
 - unsigned short -> background id
 - unsigned short -> parent block index used for lock, fish tank port and etc...
 - unsigned short -> tile flags
-if **TILEFLAGS_LOCKED** bti is on there'll be 1 additional unsigned short
+if **TILEFLAGS_LOCKED** bit is on there'll be 1 additional unsigned short
    - unsigned short -> parent block index
 
 Content of tile flags
