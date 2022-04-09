@@ -5,7 +5,7 @@ Values:
 - unsigned int -> world owner userid
 - unsigned int -> count of people with access
 - **access_data** - data of people with access 
-- uint - negative of world's beats per minute(BPM) (for world locks)
+- unsigned int - negative of world's beats per minute(BPM) (for world locks)
 
 Content of **lock flags**
 - 0x10 - FLAGS_MUSIC_NOTES_DISABLE
